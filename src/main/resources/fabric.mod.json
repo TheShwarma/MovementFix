@@ -1,0 +1,31 @@
+{
+  "schemaVersion": 1,
+  "id": "movementfixguncolony",
+  "version": "${version}",
+  "name": "MovementFixGuncolony",
+  "description": "Fixes shifting lag on Guncolony",
+  "authors": [
+    "TheShwarma, Hky"
+  ],
+  "contact": {
+    "website": "Guncolony.com"
+  },
+  "license": "All-Rights-Reserved",
+  "icon": "assets/MovementFixGuncolony/icon.png",
+  "environment": "client",
+  "entrypoints": {
+    "client": [
+      "com.guncolony.movementfixguncolony.client.MovementFixGuncolonyClient"
+    ],
+    "main": [
+      "com.guncolony.movementfixguncolony.MovementFixGuncolony"
+    ]
+  },
+  "mixins": [
+    "MovementFixGuncolony.mixins.json"
+  ],
+  "depends": {
+    "fabricloader": ">=0.10.8",
+    "minecraft": ">=1.16"
+  }
+}
